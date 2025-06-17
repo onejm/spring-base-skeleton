@@ -24,7 +24,7 @@
 	<table  align="center">
 	   <tr>
 	      <td width="200"><p align="right">아이디</td>
-	      <td width="400"><input type="text" name="id"></td>
+	      <td width="400"><input type="text" name="userId"></td>
 	   </tr>
 	   <tr>
 	      <td width="200"><p align="right">비밀번호</td>

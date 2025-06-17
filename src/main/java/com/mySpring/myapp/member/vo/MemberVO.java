@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component("memberVO")
 public class MemberVO {
-	private UUID id;
+	private String id;
 	private String userId;
 	private String pwd;
 	private String name;
@@ -15,18 +15,20 @@ public class MemberVO {
 	private Date joinDate;
 
 	public MemberVO() {
-		
+		this.id = UUID.randomUUID().toString();
 	}
 
-	public MemberVO(UUID id, String userId, String pwd, String name, String email) {
-		this.id = UUID.randomUUID();
+	public MemberVO(String userId, String pwd, String name, String email) {
+		this.id = UUID.randomUUID().toString();
 		this.userId = userId;
 		this.pwd = pwd;
 		this.name = name;
 		this.email = email;
 	}
 
-	public UUID getId() { return id; }
+	public String getId() { return id; }
+
+	public void setId(String id) { this.id = id; }
 
 	public String getUserId() {
 		return userId;

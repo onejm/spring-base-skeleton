@@ -71,7 +71,7 @@ public class BoardControllerImpl  implements BoardController{
 		String imageFileName= upload(multipartRequest);
 		HttpSession session = multipartRequest.getSession();
 		MemberVO memberVO = (MemberVO) session.getAttribute("member");
-		String id = memberVO.getId();
+		String id = memberVO.getUserId();
 		articleMap.put("parentNO", 0);
 		articleMap.put("id", id);
 		articleMap.put("imageFileName", imageFileName);
@@ -154,8 +154,8 @@ public class BoardControllerImpl  implements BoardController{
 	String imageFileName= upload(multipartRequest);
 	HttpSession session = multipartRequest.getSession();
 	MemberVO memberVO = (MemberVO) session.getAttribute("member");
-	String id = memberVO.getId();
-	articleMap.put("id", id);
+	String userId = memberVO.getUserId();
+	articleMap.put("userId", userId);
 	articleMap.put("imageFileName", imageFileName);
 	
 	String articleNO=(String)articleMap.get("articleNO");
@@ -243,7 +243,7 @@ public class BoardControllerImpl  implements BoardController{
 	//로그인 시 세션에 저장된 회원 정보에서 글쓴이 아이디를 얻어와서 Map에 저장합니다.
 	HttpSession session = multipartRequest.getSession();
 	MemberVO memberVO = (MemberVO) session.getAttribute("member");
-	String id = memberVO.getId();
+	String id = memberVO.getUserId();
 	articleMap.put("id",id);
 	
 	
