@@ -4,8 +4,9 @@
 
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.mySpring.myapp.member.vo.MemberVO"  alias="memberVO" />
-		<typeAlias type="com.mySpring.myapp.board.vo.ArticleVO"  alias="articleVO" />
-		<typeAlias type="com.mySpring.myapp.board.vo.ImageVO"  alias="imageVO" />
+		<typeAlias type="com.mySpring.myapp.adminPage.admin.vo.AdminVO" alias="adminVO"/>
+		<typeAlias type="com.mySpring.myapp.userPage.user.vo.UserVO" alias="userVO" />
+		<typeAlias type="com.mySpring.myapp.userPage.board.vo.ArticleVO" alias="articleVO" />
+		<typeAlias type="com.mySpring.myapp.userPage.board.vo.ImageVO" alias="imageVO" />
 	</typeAliases>
 </configuration>
