@@ -7,9 +7,9 @@
 
 <div style="display: flex; align-items: center;">
     <a href="${contextPath}/main.do">
-        <img src="${contextPath}/resources/img/flower.jpg" alt="로고" />
+        <img src="${contextPath}/img/logo.png" alt="로고" />
     </a>
-    <h1>실습 프로젝트</h1>
+    <h1>스켈레톤 프로젝트</h1>
 </div>
 
 <div class="login-area">

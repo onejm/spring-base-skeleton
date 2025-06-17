@@ -1,0 +1,73 @@
+.article-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #2c3e50;
+}
+
+.article-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.article-table th,
+.article-table td {
+    padding: 12px 16px;
+    border: 1px solid #dfe6e9;
+    text-align: center;
+}
+
+.article-table th {
+    background-color: #d0ebff;
+    font-weight: bold;
+}
+
+.article-title {
+    text-align: left;
+}
+
+.indent {
+    display: inline-block;
+    width: 20px;
+}
+
+.reply-prefix {
+    font-size: 12px;
+    color: #666;
+    margin-right: 6px;
+}
+
+.no-articles {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 16px;
+}
+
+.write-button {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.write-button a {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.write-button a:hover {
+    background-color: #2980b9;
+}
