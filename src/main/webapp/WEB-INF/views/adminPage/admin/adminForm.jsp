@@ -12,7 +12,7 @@
 <head>
 <meta charset="UTF-8">
 <title>회원 가입창</title>
-	<link rel="stylesheet" href="${contextPath}/css/userPage/user/userForm.css">
+	<link rel="stylesheet" href="${contextPath}/css/adminPage/user/adminForm.css">
 <style>
    .text_center{
      text-align:center;

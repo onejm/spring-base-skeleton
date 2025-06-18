@@ -13,7 +13,7 @@
 <head>
 <meta charset="UTF-8">
 <title>회원 정보 수정창</title>
-	<link rel="stylesheet" href="${contextPath}/css/userPage/user/modUser.css">
+	<link rel="stylesheet" href="${contextPath}/css/adminPage/user/modAdmin.css">
 <style>
    .text_center{
      text-align:center;

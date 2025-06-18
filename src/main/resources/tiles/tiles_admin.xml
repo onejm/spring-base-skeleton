@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="/adminPage/baseLayout"  template="/WEB-INF/views/adminPage/common/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/views/adminPage/common/header.jsp" />
+        <put-attribute name="side" value="/WEB-INF/views/adminPage/common/side.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/adminPage/common/footer.jsp" />
+    </definition>
+
+    <definition name="" extends="baseLayout">
+        <put-attribute name="title" value="메인페이지" />
+        <put-attribute name="body" value="/WEB-INF/views/adminPage/main.jsp" />
+    </definition>
+
+    <definition name="/adminPage/main" extends="baseLayout">
+        <put-attribute name="title" value="메인페이지" />
+        <put-attribute name="body" value="/WEB-INF/views/adminPage/main.jsp" />
+    </definition>
+
+
+    <definition name="/adminPage/admin/listAdmins" extends="baseLayout">
+        <put-attribute name="title" value="회원목록창" />
+        <put-attribute name="body" value="/WEB-INF/views/adminPage/admin/listAdmins.jsp" />
+    </definition>
+
+
+
+    <definition name="/adminPage/admin/loginForm" extends="baseLayout">
+        <put-attribute name="title" value="로그인창" />
+        <put-attribute name="body" value="/WEB-INF/views/adminPage/admin/loginForm.jsp" />
+    </definition>
+
+
+    <definition name="/adminPage/admin/adminForm" extends="baseLayout">
+        <put-attribute name="title" value="회원등록창" />
+        <put-attribute name="body" value="/WEB-INF/views/adminPage/admin/adminForm.jsp" />
+    </definition>
+    <!-- 
+       <definition name="/adminPage/admin/viewDetail" extends="baseLayout">
+          <put-attribute name="title" value="회원상세창" />
+          <put-attribute name="body" value="/WEB-INF/views/adminPage/admin/viewDetail.jsp" />
+       </definition> 
+       -->
+</tiles-definitions>

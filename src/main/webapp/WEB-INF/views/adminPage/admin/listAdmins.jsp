@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <title>회원 정보 출력창</title>
-    <link rel="stylesheet" href="${contextPath}/css/userPage/user/listUsers.css">
+    <link rel="stylesheet" href="${contextPath}/css/adminPage/user/listAdmins.css">
 </head>
 <body>
 <div class="user-container">

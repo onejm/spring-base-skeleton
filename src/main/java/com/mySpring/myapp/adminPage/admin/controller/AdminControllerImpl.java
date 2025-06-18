@@ -24,9 +24,9 @@ public class AdminControllerImpl implements AdminController {
 	@Autowired
 	AdminVO adminVO;
 	
-	@RequestMapping(value = {"/adminPage/main.do"}, method = RequestMethod.GET)
+	@RequestMapping(value = {"/adminPage/", "/adminPage/main.do"}, method = RequestMethod.GET)
 	private ModelAndView main(HttpServletRequest request, HttpServletResponse response) {
-		String viewName = (String)request.getAttribute("viewName");	
+		String viewName = (String)request.getAttribute("viewName");
 		System.out.println(viewName);
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName(viewName);

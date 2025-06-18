@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <title>로그인창</title>
-    <link rel="stylesheet" href="${contextPath}/css/userPage/user/loginForm.css" />
+    <link rel="stylesheet" href="${contextPath}/css/adminPage/user/loginForm.css" />
 
     <c:choose>
         <c:when test="${result == 'loginFailed'}">
